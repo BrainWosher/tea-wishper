@@ -13,17 +13,19 @@ ul {
     margin-left: 0; /* Отступ слева в браузере IE и Opera */
     padding-left: 0; /* Отступ слева в браузере Firefox, Safari, Chrome */
 }
-.container {    
+.container { 
+
     margin: 0 auto;
 }
 .header {
     background-color: #FFF8DC;    
     height: 220px;     
     margin: 0;
+    padding: 0;
 }
 .wrapper {
     width: 1024px;
-/*    width: inherit;*/
+/*  width: inherit;*/
     margin: 0 auto;
     height: inherit;    
 /*    padding: 20px 20px;*/
@@ -35,8 +37,9 @@ ul {
 .content {
     position: relative;
     width: 1024px;
-    background-color: #E1E0E1;    
-/*
+    background-color: #E1E0E1;
+     margin: 0 auto;
+    /*
     min-height: 100%;
     height: auto;
     */
@@ -45,14 +48,17 @@ ul {
 .footer {    
     background-color: #A52A2A;
     height: 110px;
-    position: fixed; /* Фиксированное положение */
+   
     left: 0; bottom: 0; /* Левый нижний угол */
     width: 100%; /* Ширина слоя */
 }
 .footer-copyrighted {
-    position: relative;
-    left: 840px;
-    margin: 10px 10px 0px 0px;
+     max-width: 220px; /* блок занимает ширину родителя, max-width её ограничивает */
+    min-height: 2em;
+/*    position: relative;*/
+     margin-left: auto;
+    margin-right: 0em;
+   
 }
 .menu-navbar {
     max-width: 220px; /* блок занимает ширину родителя, max-width её ограничивает */
